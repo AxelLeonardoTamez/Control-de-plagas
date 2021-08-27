@@ -4,7 +4,7 @@ Esto se me hace un proyecto muy interesante ya que no necesariamente tienes que 
 
 ### Seudo código
 
-Ingrese tipo de plaga
+Estado inicial, input tipo de plaga
 Determinar si esa plaga se puede controlar por tratamiento químico, biológico o ambos
 Si tiene ambos tratamientos print tratamiento químico y biológico 
 If not print tratamiento químico
@@ -13,3 +13,4 @@ print el tratamiento adecuado
 If el tratamiento es químico
 input area que desea fumigar
 print litros de químico que necesita para fumigar
+Estado final, print (tratamiento, cantidad de quimico)
