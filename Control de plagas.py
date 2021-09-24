@@ -29,23 +29,43 @@ def menu():
     print("2. Mosca de la remalacha")
     print("3. Pulgon")
     print("4. Nematodos")
-    op = int(input("Escoge tu plaga a tratar"))
-    if op == 1:
+    plaga = int(input("Escoge tu plaga a tratar"))
+    while plaga>=5:
+        print("Error, seleccione un numero de los mostrados en pantalla")
+        plaga = int(input("Escoge tu plaga a tratar"))
+   
+         
+    if plaga == 1:
         semilla = float(input("Dame los Kg de semilla "))
+        while semilla<0:
+            print("Error, ingrese numero positivo")
+            semilla = float(input("Dame los Kg de semilla "))
         res = Mildui(semilla)
         print("Los kilogramos necesarios son: ", res)
-    if op == 2:
+    if plaga == 2:
         hec = float(input("Dame el numero de hectareas "))
+        while hec<0:
+            print("Error, ingrese numero positivo")
+            hec = float(input("Dame el numero de hectareas "))
         res = Mosca(hec)
         print("Los litros de agua con diazinon necesarios son: ", res)
-    if op == 3:
+    if plaga == 3:
         hec = float(input("Dame el numero de hectareas "))
+        while hec<0:
+            print("Error, ingrese numero positivo")
+            hec = float(input("Dame el numero de hectareas "))
         res = Pulgon(hec)
         print("Los litros de agua con acefato necesarios son:", res)
-    if op == 4:
+    if plaga == 4:
         hec = float(input("Dame el numero de hectareas "))
+        while hec<0:
+            print("Error, ingrese numero positivo")
+            hec = float(input("Dame el numero de hectareas "))
         res = Nematodos(hec)
         print("Los litros de fenamifos necesarios son:", res)
+        
+
+
 
 menu()
 
