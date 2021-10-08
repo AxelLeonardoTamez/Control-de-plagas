@@ -3,35 +3,35 @@ def menu():
     print("2. Caracteristicas Mosca de la remolacha")
     print("3. Caracteristicas Pulgon")
     print("4. Caracteristicas Nematodos")
-    plaga = int(input("Escoge tu plaga a tratar"))
+    plaga = int(input("Elige plaga a conocer"))
     while plaga>=5:
         print("Error, seleccione un numero de los mostrados en pantalla")
-        plaga = int(input("Escoge tu plaga a tratar"))
+        plaga = int(input("Elige plaga a conocer"))
         
     if plaga == 1:
-        print("forma fisica = 0, Ubicacion en la planta = 1, Daños causados = 2")
+        print(" forma fisica = 0\n Ubicacion en la planta = 1\n Daños causados = 2")
         mildui = ["Manchas amarillas","En las hojas","Seca las hojas"]
         dato = int(input("Ingrese el numero del dato que quiera saber"))
         print(mildui[dato])
          
     if plaga == 2:
-         print("forma fisica = 0, Ubicacion en la planta = 1, Daños causados = 2")
+         print(" forma fisica = 0\n Ubicacion en la planta = 1\n Daños causados = 2")
          mosca = ["Insecto","Dentro de las hojas","El tejido afectado se vuelve translucido"]
          dato = int(input("Ingrese el numero del dato que quiera saber"))
          print(mosca[dato])
         
     if plaga == 3:
-         print("forma fisica = 0, Ubicacion en la planta = 1, Daños causados = 2")
+         print(" forma fisica = 0\n Ubicacion en la planta = 1\n Daños causados = 2")
          pulgon = ["Insecto","Entre las hojas","Se come la hoja"]
          dato = int(input("Ingrese el numero del dato que quiera saber"))
          print(pulgon[dato])
         
     if plaga == 4:
-         print("forma fisica = 0, Ubicacion en la planta = 1, Daños causados = 2")
+         print(" forma fisica = 0\n Ubicacion en la planta = 1\n Daños causados = 2")
          nematodos = ["Gusano microscopico","En la raiz","Dañan las raices"]
          dato = int(input("Ingrese el numero del dato que quiera saber"))
          print(nematodos[dato])
-         
+                
 menu()         
     
 def Mildui(semilla):
